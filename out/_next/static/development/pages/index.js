@@ -269,7 +269,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
     value: function componentDidMount() {
       var script = document.createElement('script');
       script.async = true;
-      script.src = "https://dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675&autoload=false";
+      script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675";
       document.head.appendChild(script);
       script.onload = function () {
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
