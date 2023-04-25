@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
   }
 
   render() {
-    const prefix = process.env.NODE_ENV === 'production' ? 'https://boramyy.github.io/invitation' : '';
+    const prefix = process.env.NODE_ENV === 'production' ? 'https://justin-dongwook-jung.github.io/haonFirst' : '';
 
     const GlobalStyle = createGlobalStyle`
       @media only screen and (min-width : 1024px) {
@@ -85,17 +85,18 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="하온이의 첫 생일에 초대합니다." />
           <meta property="og:description" content="" />
           <meta property="og:image" content="/static/images/oglink.jpg" />
-          {/* <meta property="og:url" content="http://dunocanna.site/" /> */}
-          <meta property="og:url" content="https://boramyy.github.io/dunocanna" />
+          <meta property="og:url" content="https://justin-dongwook-jung.github.io/haonFirst" />
           <link rel="stylesheet" href={`${prefix}/static/css/reset.css`} key="resetcss" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700" key="google-font-nanum-m" />
+          <link rel="shortcut icon" href="#"/>
           {this.props.styleTags}
         </Head>
         <body>
           <GlobalStyle />
           <Main />
+          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675"/>
+          <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.story.min.js" integrity="sha384-2Iizs9d663Ml4F6X4f1lrOBfWnVoYLE+AJX24nl8Vof23ke3SqL5VJRzYSGoZxhW" crossorigin="anonymous"></script>
           <NextScript />
-          <script src="//developers.kakao.com/sdk/js/kakao.min.js" />
         </body>
       </html>
     );

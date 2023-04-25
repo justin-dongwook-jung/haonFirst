@@ -75,6 +75,21 @@ class Location extends React.Component {
     super(props);
   }
 
+  getMap = () => {
+    const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    const options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new kakao.maps.LatLng(37.492436, 127.007921),
+      level: 4
+    };
+    const map = new kakao.maps.Map(container, options);
+    const positionMark = new kakao.maps.LatLng(37.492436, 127.007921);
+    const marker = new kakao.maps.Marker({
+      position: positionMark
+    })
+
+    marker.setMap(map);
+  }
+
   openKakaoNavi = (e) => {
     e.preventDefault();
     //<![CDATA[
@@ -88,22 +103,7 @@ class Location extends React.Component {
   }
 
   componentDidMount() { 
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = "https://dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675&autoload=false";
-    document.head.appendChild(script);
-    script.onload = () => {
-      const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-      const options = { //지도를 생성할 때 필요한 기본 옵션
-        center: new kakao.maps.LatLng(37.492436, 127.007921),
-        level: 4
-      };
-      //지도 생성 및 객체 리턴
-      const map = new kakao.maps.Map(container, options); 
-      
-      // 마커 생성
-      // const positionApelgamo = new kakao.maps.LatLng(37.492436, 127.007921);
-    }
+    this.getMap();
   }
 
   render() {
@@ -112,7 +112,7 @@ class Location extends React.Component {
         <MapBox id="map" />
         <ButtonBox>
           <StyledNaviLink src={`${this.props.prefix}/static/images/kakaonavi_btn.jpg`} href="#!" onClick={e => this.openKakaoNavi(e)} onClickCapture={e => this.openKakaoNavi(e)} />
-          <StyledNaviLink src={`${this.props.prefix}/static/images/tmap_btn.jpg`} href="https://api2.sktelecom.com/tmap/app/routes?appKey=195e2e4e-4284-408b-b8c2-da611faa8493&name=아펠가모 잠실&lon=127.09964406341295&lat=37.51592626764367" />
+          <StyledNaviLink src={`${this.props.prefix}/static/images/tmap_btn.jpg`} href="https://api2.sktelecom.com/tmap/app/routes?appKey=Vkbugqw22G1b1WAKvCUlY4tN0MwXiaWJ7BcxydoS&name=W페스타&lon=127.007921&lat=37.492436" />
         </ButtonBox>
         <Address>
           서울특별시 서초구

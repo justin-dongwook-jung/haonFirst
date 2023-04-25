@@ -9,7 +9,7 @@ class Index extends React.Component {
   }
 
   render() {
-    const prefix = process.env.NODE_ENV === 'production' ? 'https://boramyy.github.io/invitation' : '';
+    const prefix = process.env.NODE_ENV === 'production' ? 'https://justin-dongwook-jung.github.io/haonFirst' : '';
 
     return (
       <div>
