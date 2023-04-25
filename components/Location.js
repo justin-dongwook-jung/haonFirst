@@ -92,14 +92,12 @@ class Location extends React.Component {
 
   openKakaoNavi = (e) => {
     e.preventDefault();
-    //<![CDATA[
       Kakao.Navi.start({
-        name: "더블유페스타 서초",
-        x: 37.492436,
-        y: 127.007921,
+        name: "더블유페스타 서초점",
+        x: 127.00807096817688,
+        y: 37.49253377122232,
         coordType: "wgs84"
       });
-    //]]>
   }
 
   componentDidMount() { 

@@ -95,7 +95,7 @@ export default class MyDocument extends Document {
           <GlobalStyle />
           <Main />
           <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675"/>
-          <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.story.min.js" integrity="sha384-2Iizs9d663Ml4F6X4f1lrOBfWnVoYLE+AJX24nl8Vof23ke3SqL5VJRzYSGoZxhW" crossorigin="anonymous"></script>
+          <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
           <NextScript />
         </body>
       </html>
