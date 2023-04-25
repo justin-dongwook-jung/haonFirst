@@ -359,7 +359,7 @@ var Share = /*#__PURE__*/function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "handles", {
       sendLink: function sendLink(e) {
         Kakao.Link.sendCustom({
-          templateId: 14643
+          templateId: 93045
         });
       }
     });
