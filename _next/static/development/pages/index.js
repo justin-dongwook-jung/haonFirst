@@ -267,23 +267,18 @@ var Location = /*#__PURE__*/function (_React$Component) {
   _createClass(Location, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=cd88b238750f20e9f5b1ff70d7a78675";
-      document.head.appendChild(script);
-      script.onload = function () {
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = {
-          //지도를 생성할 때 필요한 기본 옵션
-          center: new kakao.maps.LatLng(37.492436, 127.007921),
-          level: 4
-        };
-        //지도 생성 및 객체 리턴
-        var map = new kakao.maps.Map(container, options);
-
-        // 마커 생성
-        // const positionApelgamo = new kakao.maps.LatLng(37.492436, 127.007921);
+      var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+      var options = {
+        //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(37.492436, 127.007921),
+        level: 4
       };
+      //지도 생성 및 객체 리턴
+      var map = new kakao.maps.Map(container, options);
+      var marker = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.492436, 127.007921)
+      });
+      marker.setMap(map);
     }
   }, {
     key: "render",
@@ -304,7 +299,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledNaviLink, {
         src: "".concat(this.props.prefix, "/static/images/tmap_btn.jpg"),
-        href: "https://api2.sktelecom.com/tmap/app/routes?appKey=195e2e4e-4284-408b-b8c2-da611faa8493&name=\uC544\uD3A0\uAC00\uBAA8 \uC7A0\uC2E4&lon=127.09964406341295&lat=37.51592626764367"
+        href: "https://api2.sktelecom.com/tmap/app/routes?appKey=Vkbugqw22G1b1WAKvCUlY4tN0MwXiaWJ7BcxydoS&name=W\uD398\uC2A4\uD0C0&lon=127.007921&lat=37.492436"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Address, null, "\uC11C\uC6B8\uD2B9\uBCC4\uC2DC \uC11C\uCD08\uAD6C", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " \uBC18\uD3EC\uB300\uB85C 138(\uC591\uC9C4\uBE4C\uB529) \uC9C0\uD558 1\uCE35"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WayBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uC790\uAC00\uC6A9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\uB0B4\uBE44\uAC8C\uC774\uC158\uC5D0 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "\uB354\uBE14\uC720\uD398\uC2A4\uD0C0 \uC11C\uCD08\uC810"), " \uAC80\uC0C9", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "\uC8FC\uCC28 2\uC2DC\uAC04 \uBB34\uB8CC")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WayBox, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "\uC9C0\uD558\uCCA0\uB85C \uC624\uC2DC\uB294 \uBC29\uBC95"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "\uC11C\uCD08\uC5ED 8\uBC88\uCD9C\uAD6C(", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ColorSpan, {
         color: "#61b057"
       }, "2\uD638\uC120"), ")"), "\uBC14\uB85C \uC55E \uC591\uC9C4\uBE4C\uB529")));
