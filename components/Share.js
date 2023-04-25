@@ -8,7 +8,7 @@ class Share extends React.Component {
   handles = {
     sendLink: e => {
       Kakao.Link.sendCustom({
-        templateId: 14643
+        templateId: 93045
       });
     }
   }
