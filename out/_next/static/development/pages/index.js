@@ -251,6 +251,20 @@ var Location = /*#__PURE__*/function (_React$Component) {
     var _this;
     _classCallCheck(this, Location);
     _this = _super.call(this, props);
+    _defineProperty(_assertThisInitialized(_this), "getMap", function () {
+      var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+      var options = {
+        //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(37.492436, 127.007921),
+        level: 4
+      };
+      var map = new kakao.maps.Map(container, options);
+      var positionMark = new kakao.maps.LatLng(37.492436, 127.007921);
+      var marker = new kakao.maps.Marker({
+        position: positionMark
+      });
+      marker.setMap(map);
+    });
     _defineProperty(_assertThisInitialized(_this), "openKakaoNavi", function (e) {
       e.preventDefault();
       //<![CDATA[
@@ -267,18 +281,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
   _createClass(Location, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-      var options = {
-        //지도를 생성할 때 필요한 기본 옵션
-        center: new kakao.maps.LatLng(37.492436, 127.007921),
-        level: 4
-      };
-      //지도 생성 및 객체 리턴
-      var map = new kakao.maps.Map(container, options);
-      var marker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(37.492436, 127.007921)
-      });
-      marker.setMap(map);
+      this.getMap();
     }
   }, {
     key: "render",
