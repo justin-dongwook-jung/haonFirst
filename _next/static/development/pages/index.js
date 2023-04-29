@@ -101,7 +101,6 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
         className: "hide"
       }, "Image Slider"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
         items: getGalleryItems,
-        dotsDisabled: false,
         buttonsDisabled: true,
         ref: function ref(el) {
           return _this2.Carousel = el;
