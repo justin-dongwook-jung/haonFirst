@@ -86,9 +86,6 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
       }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_13.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_13.jpeg")
-      }, {
-        origin: "".concat(_this.props.prefix, "/static/images/img_14.jpeg"),
-        thumbnail: "".concat(_this.props.prefix, "/static/images/img_14.jpeg")
       }]
     };
     _this.handle = {
