@@ -74,6 +74,8 @@ export default class MyDocument extends Document {
       .alice-carousel__dots-item:nth-child(8) {background-image:url("${prefix}/static/images/img_08.jpeg")}
       .alice-carousel__dots-item:nth-child(9) {background-image:url("${prefix}/static/images/img_09.jpeg")}
       .alice-carousel__dots-item:nth-child(10) {background-image:url("${prefix}/static/images/img_10.jpeg")}
+      .alice-carousel__dots-item:nth-child(11) {background-image:url("${prefix}/static/images/img_11.jpeg")}
+      .alice-carousel__dots-item:nth-child(12) {background-image:url("${prefix}/static/images/img_12.jpeg")}
     `;
 
     return (

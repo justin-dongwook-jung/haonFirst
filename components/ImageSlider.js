@@ -56,6 +56,14 @@ class ImageSlider extends React.Component {
         {
           origin: `${this.props.prefix}/static/images/img_10.jpeg`,
           thumbnail: `${this.props.prefix}/static/images/img_10.jpeg`
+        },
+        {
+          origin: `${this.props.prefix}/static/images/img_11.jpeg`,
+          thumbnail: `${this.props.prefix}/static/images/img_11.jpeg`
+        },
+        {
+          origin: `${this.props.prefix}/static/images/img_12.jpeg`,
+          thumbnail: `${this.props.prefix}/static/images/img_12.jpeg`
         }
       ]
     };
@@ -76,7 +84,6 @@ class ImageSlider extends React.Component {
         <h2 className="hide">Image Slider</h2>
         <StyledSlider
           items={getGalleryItems}
-          dotsDisabled={false}
           buttonsDisabled={true}
           ref={el => (this.Carousel = el)}
         />
