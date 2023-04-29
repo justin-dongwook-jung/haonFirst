@@ -80,6 +80,9 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
       }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_10.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_10.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_11.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_11.jpeg")
       }]
     };
     _this.handle = {
@@ -101,9 +104,7 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
         className: "hide"
       }, "Image Slider"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
         items: getGalleryItems,
-        dotsDisabled: false,
         buttonsDisabled: true,
-        showSlideInfo: true,
         ref: function ref(el) {
           return _this2.Carousel = el;
         }
@@ -117,4 +118,4 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.4fcb7e643ebda99e5056.hot-update.js.map
+//# sourceMappingURL=index.js.85d657b53973f3ac1279.hot-update.js.map

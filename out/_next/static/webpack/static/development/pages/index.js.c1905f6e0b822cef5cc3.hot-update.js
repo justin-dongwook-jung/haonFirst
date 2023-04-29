@@ -57,9 +57,6 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
         origin: "".concat(_this.props.prefix, "/static/images/img_02.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_02.jpeg")
       }, {
-        origin: "".concat(_this.props.prefix, "/static/images/img_03.jpeg"),
-        thumbnail: "".concat(_this.props.prefix, "/static/images/img_03.jpeg")
-      }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_04.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_04.jpeg")
       }, {
@@ -80,6 +77,18 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
       }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_10.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_10.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_11.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_11.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_12.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_12.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_13.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_13.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_14.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_14.jpeg")
       }]
     };
     _this.handle = {
@@ -101,7 +110,6 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
         className: "hide"
       }, "Image Slider"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, {
         items: getGalleryItems,
-        dotsDisabled: false,
         buttonsDisabled: true,
         ref: function ref(el) {
           return _this2.Carousel = el;
@@ -116,4 +124,4 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.dfa05e4bffc1302117ad.hot-update.js.map
+//# sourceMappingURL=index.js.c1905f6e0b822cef5cc3.hot-update.js.map
