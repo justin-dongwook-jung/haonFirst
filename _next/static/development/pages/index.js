@@ -57,9 +57,6 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
         origin: "".concat(_this.props.prefix, "/static/images/img_02.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_02.jpeg")
       }, {
-        origin: "".concat(_this.props.prefix, "/static/images/img_03.jpeg"),
-        thumbnail: "".concat(_this.props.prefix, "/static/images/img_03.jpeg")
-      }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_04.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_04.jpeg")
       }, {
@@ -80,6 +77,18 @@ var ImageSlider = /*#__PURE__*/function (_React$Component) {
       }, {
         origin: "".concat(_this.props.prefix, "/static/images/img_10.jpeg"),
         thumbnail: "".concat(_this.props.prefix, "/static/images/img_10.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_11.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_11.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_12.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_12.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_13.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_13.jpeg")
+      }, {
+        origin: "".concat(_this.props.prefix, "/static/images/img_14.jpeg"),
+        thumbnail: "".concat(_this.props.prefix, "/static/images/img_14.jpeg")
       }]
     };
     _this.handle = {
