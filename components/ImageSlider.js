@@ -56,14 +56,6 @@ class ImageSlider extends React.Component {
         {
           origin: `${this.props.prefix}/static/images/img_10.jpeg`,
           thumbnail: `${this.props.prefix}/static/images/img_10.jpeg`
-        },
-        {
-          origin: `${this.props.prefix}/static/images/img_11.jpeg`,
-          thumbnail: `${this.props.prefix}/static/images/img_11.jpeg`
-        },
-        {
-          origin: `${this.props.prefix}/static/images/img_12.jpeg`,
-          thumbnail: `${this.props.prefix}/static/images/img_12.jpeg`
         }
       ]
     };
